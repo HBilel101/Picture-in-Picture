@@ -20,7 +20,7 @@ const captureStream =  async()=> {
 captureStream();
 
 btn.addEventListener('click',async ()=> {
-    btn.disabled = false ;
+    btn.disabled = true ;
     await videoElement.requestPictureInPicture();
-    btn.disabled = true;
+    btn.disabled = false;
 })
